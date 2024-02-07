@@ -1,0 +1,12 @@
+#!/bin/bash
+
+websites=("www.google.com")
+
+for website in "${website[@]}"; do
+        if curl --output /dev/null --silent --head --fail "$website";
+        then
+                echo  "website is UP"
+        else
+                echo "$website is Down"
+        fi
+dones
