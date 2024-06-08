@@ -1,0 +1,32 @@
+!/bin/bash
+
+finished=0
+while [ $finished -ne 1 ]
+do
+        echo "what is your favourate linux OS"
+#!/bin/bash
+
+finished=0
+while [ $finished -ne 1 ]
+do
+        echo "what is your favourate linux OS"
+
+
+        echo "1 - Arch"
+        echo "2 - CentOS"
+        echo "3 - Mint"
+        echo "4 - Debian"
+        echo "5 - UBuntu"
+        echo "6 - Something else.."
+        echo "7 - exit the script."
+
+        read distro;
+        case $distro in
+                1) echo "Arch is a rolling release";;
+                2) echo "CentOS is popular in servers";;
+                3) echo "Mint is popular in laptops";;
+                4) echo "Debian is community distributers";;
+                5) echo "Ubuntu is a basic community OS";;
+                6) echo "This not mentioned above..";;
+                7) finished=1;;
+                *) echo "You did not enter any appropriate choice."
